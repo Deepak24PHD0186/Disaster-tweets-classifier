@@ -41,13 +41,13 @@ We used **Logistic Regression** with TF-IDF features as a baseline model.
 The competition uses the **F1 Score** as the primary evaluation metric.
 
 ### Validation Score
-Achieved a validation F1 score of **`{0.7085}`**.
+Achieved a validation F1 score of **`{0.8118}`**.
 
 ---
 
 ## 📈 Kaggle Submission
 
-- Public Score on Kaggle: **`{468}`**
+- Public Score on Kaggle: **`{279}`**
 - Screenshot of leaderboard position is included in the submission.
 
 ---
