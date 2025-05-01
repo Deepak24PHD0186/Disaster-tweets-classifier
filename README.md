@@ -55,11 +55,23 @@ print(torch.cuda.is_available())  # True means GPU is available
 📈 Output
 Cleaned and preprocessed tweet text
 
+
 Tokenized sequences
+
+
 
 BERT-based classification model
 
 Confusion matrix and classification report with precision, recall, and F1 score
+
+## Results and Analysis
+
+### Results:
+The Naive Bayes model achieved an accuracy of 83% on the test data. The confusion matrix shows that the model performs well on Class A but struggles with Class B.
+
+### Analysis:
+The model performed well on the majority class, but its performance on the minority class could be improved. We plan to try different hyperparameters and other models, such as Logistic Regression, to improve performance.
+
 
 📎 Dependencies
 Make sure the following libraries are installed (included in requirements.txt):
