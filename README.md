@@ -1,73 +1,99 @@
-# disaster-tweet-classifier
-A classifier that detects real disaster tweets using NLP
+# 🧠 Tweet Classification Using NLP and BERT
 
-# 🧠 Disaster Tweet Classifier
-
-This project is a submission for the Kaggle competition [Natural Language Processing with Disaster Tweets](https://www.kaggle.com/competitions/nlp-getting-started/overview). The goal is to classify whether a tweet is about a real disaster or not.
+This project applies **Natural Language Processing (NLP)** techniques to classify tweet data based on features like keywords, location, and sentiment. Leveraging transformer models (such as **BERT**), the goal is to accurately categorize tweets—particularly for disaster-related classification—by processing and analyzing large-scale textual data.
 
 ---
 
-## 📂 Project Structure
+## 📌 Features
 
-
----
-
-## 📊 Dataset
-
-The dataset contains 10,000+ tweets labeled as:
-- `1` - tweet refers to a **real disaster**
-- `0` - tweet is **not** about a real disaster
-
-Provided by Kaggle:
-- [train.csv](https://www.kaggle.com/competitions/nlp-getting-started/data)
-- [test.csv](https://www.kaggle.com/competitions/nlp-getting-started/data)
-- [sample_submission.csv](https://www.kaggle.com/competitions/nlp-getting-started/data)
+- ✅ Text preprocessing: HTML cleaning, lowercasing, stopword removal  
+- ✅ TF-IDF vectorization and word embedding techniques  
+- ✅ BERT-based model fine-tuning using TensorFlow/Keras  
+- ✅ Evaluation with classification report and confusion matrix
 
 ---
 
-## 🧹 Preprocessing
+## 📂 Dataset
 
-- Lowercased text
-- Removed URLs, mentions, hashtags, punctuation, numbers
-- Tokenization & TF-IDF vectorization
+This project works with tweet data labeled as real or not real (e.g., whether a tweet is about a real disaster). A common dataset used is:
 
----
+> **[Real or Not? NLP with Disaster Tweets - Kaggle](https://www.kaggle.com/competitions/nlp-getting-started)**
 
-## 🤖 Model
-
-We used **Logistic Regression** with TF-IDF features as a baseline model.
-
-### Evaluation Metric
-The competition uses the **F1 Score** as the primary evaluation metric.
-
-### Validation Score
-Achieved a validation F1 score of **`{0.8118}`**.
+Make sure the dataset includes columns such as `text`, `target`, `location`, and `keyword`.
 
 ---
 
-## 📈 Kaggle Submission
+## 🛠️ Installation
 
-- Public Score on Kaggle: **`{279}`**
-- Screenshot of leaderboard position is included in the submission.
+1. Clone the repository:
 
+```bash
+git clone https://github.com/yourusername/nlp-tweet-classifier.git
+cd nlp-tweet-classifier
+
+Install all the requirements using pip codes.
+
+**### Download required NLTK resources:**
+
+import nltk
+nltk.download('stopwords')
+
+🧪 Usage
+Run the Jupyter Notebook:
+
+bash
+Copy
+Edit
+jupyter notebook Week-04_NLP_tweets.ipynb
+Ensure GPU is enabled for faster training (especially for BERT):
+
+python
+Copy
+Edit
+import torch
+print(torch.cuda.is_available())  # True means GPU is available
+📈 Output
+Cleaned and preprocessed tweet text
+
+Tokenized sequences
+
+BERT-based classification model
+
+Confusion matrix and classification report with precision, recall, and F1 score
+
+📎 Dependencies
+Make sure the following libraries are installed (included in requirements.txt):
+
+transformers
+
+tensorflow
+
+keras
+
+torch
+
+nltk
+
+scikit-learn
+
+pandas
+
+matplotlib
+
+spacy
+
+beautifulsoup4
+
+👤 Author
+Your Name
+GitHub: @Deepak24PHD0186
+
+📄 License
+This project is licensed under the MIT License.
 ---
 
-## 🚀 Future Work
+Let me know if you'd like me to generate the `requirements.txt` content from the notebook code too.
 
-- Implement more advanced models (e.g., LSTM, BERT)
-- Improve preprocessing with lemmatization, stemming
-- Perform hyperparameter tuning and ensemble models
 
----
 
-## 🔗 GitHub Repository
-
-All code and files are available in this public repository:  
-[https://github.com/your-username/disaster-tweet-classifier](https://github.com/your-username/disaster-tweet-classifier)
-
----
-
-## 📬 Contact
-
-If you have any questions or feedback, feel free to reach out via GitHub issues!
 
