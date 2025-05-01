@@ -25,11 +25,6 @@ Make sure the dataset includes columns such as `text`, `target`, `location`, and
 
 ## 🛠️ Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/nlp-tweet-classifier.git
-cd nlp-tweet-classifier
 
 Install all the requirements using pip codes.
 
@@ -74,7 +69,6 @@ The model performed well on the majority class, but its performance on the minor
 
 
 📎 Dependencies
-Make sure the following libraries are installed (included in requirements.txt):
 
 transformers
 
@@ -103,8 +97,6 @@ GitHub: @Deepak24PHD0186
 📄 License
 This project is licensed under the MIT License.
 ---
-
-Let me know if you'd like me to generate the `requirements.txt` content from the notebook code too.
 
 
 
